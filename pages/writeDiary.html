@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/writeDiary.css" />
+    <script defer type="module" src="./writeDiary.js"></script>
+    <title>일기 쓰기</title>
+  </head>
+  <body>
+    <article class="container">
+      <h3>일기장</h3>
+      <div class="container-header">
+        <input type="date" id="date-calender" class="container-input" />
+        <input
+          type="text"
+          id="title"
+          class="container-input"
+          placeholder="제목입니다"
+        />
+      </div>
+      <section class="container-body">
+        <select id="mood">
+          <option selected disabled>감정을 표현하세요</option>
+          <option value="기쁨">기뻐요😀</option>
+          <option value="행복">행복해요😊</option>
+          <option value="평온">평온해요😌</option>
+          <option value="슬픔">슬퍼요😭</option>
+        </select>
+      </section>
+      <section class="container-footer">
+        <textarea id="content-box"></textarea>
+        <button type="button" class="saveButton" id="buttonSubmit">작성완료</button>
+      </section>
+    </article>
+  </body>
+</html>

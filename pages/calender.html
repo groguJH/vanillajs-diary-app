@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>월간 달력</title>
+    <link rel="stylesheet" href="../styles/calander.css" />
+    <script defer type="module" src="./calender.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <nav class="container-nav">
+          <button id="prev-month" class="nav-btn" type="button">&lt;</button>
+          <span id="nav-btn-month"></span>
+          <button id="next-month" class="nav-btn" type="button">&gt;</button>
+          <button id="go-today" class="nav-btn-today" type="button">Today</button>
+        </nav>
+      </header>
+
+      <section class="container-main">
+        <table>
+          <thead>
+            <tr>
+              <th>SUN</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+            </tr>
+          </thead>
+          <tbody class="container-main-cal-body"></tbody>
+        </table>
+        <dialog class="modal">
+          <p id="content"></p>
+          <div class="modal-input-button">
+            <input type="text" id="inputContent" />
+            <div class="button-wrapper">
+              <button id="save" class="button" type="button">저장</button>
+              <button id="close" class="button" type="button">닫기</button>
+            </div>
+          </div>
+        </dialog>
+      </section>
+    </main>
+  </body>
+</html>

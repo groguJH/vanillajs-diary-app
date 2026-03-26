@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+#container {
+  position: relative;
+  top: 70px;
+  display: inline-block;
+}
+#drawing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid white;
+}
+#image-canvas {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}

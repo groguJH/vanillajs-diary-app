@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer type="module" src="./pages/index.js"></script>
+    <title>다이어리</title>
+  </head>
+  <body data-theme="light-mode">
+    <div class="wrapper">
+      <div class="followMouseAnimation">✏️</div>
+      <label id="switch">
+        <input id="theme-toggle" type="checkbox" />
+        <span id="switch-text"> 다크모드 on</span>
+      </label>
+      <header class="wrapper-header">
+        <span class="text">다이어리</span>
+        <nav class="nav">
+          <ul>
+            <li class="nav__list" id="home">홈</li>
+            <li class="nav__list" id="writeDiary">일기쓰기</li>
+            <li class="nav__list" id="diaryLists">목록보기</li>
+            <li class="nav__list" id="calender">월간달력</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="wrapper-body">
+        <aside class="wrapper-wisdom">
+          <span class="body-header-text">📝오늘의 명언</span>
+          <span class="body-header-text" id="author"></span>
+          <span class="body-header-text" id="message"></span>
+        </aside>
+        <section>
+          <iframe id="content-frame" src="./pages/home.html"></iframe>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
