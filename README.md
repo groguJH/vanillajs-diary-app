@@ -6,7 +6,7 @@
 Vanilla JavaScript로 `iframe` 기반 페이지 전환, `localStorage` 저장, 달력 렌더링, 테마 전환, 외부 API 연동을 직접 구현했고,
 Unsplash 이미지는 서버 경유 방식으로 호출해 API 키가 브라우저에 노출되지 않도록 구성했습니다.
 
-[🔗프로젝트 링크]: https://diary-app-tau-one.vercel.app/ 
+[🔗프로젝트 링크]:https://diary-app-tau-one.vercel.app/ 
 
 
 
